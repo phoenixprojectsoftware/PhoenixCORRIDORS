@@ -1,0 +1,178 @@
+hlcsg v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: "C:/Program Files/J.A.C.K/halflife/hlcsg.exe" C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 
+Arguments: C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 -low -wadautodetect 
+Entering C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       8 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 50331648 ] [ 50331648 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wad configuration file[    None ] [    None ]
+wad.cfg group name    [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.00 seconds)
+CSGBrush:
+ (0.01 seconds)
+
+Using Wadfile: \Phoenix\CORRIDORS\valve\halflife.wad
+ - Contains 3 used textures, 100.00 percent of map (3116 textures in wad)
+
+Wad files required to run the map: "halflife.wad;"
+Texture usage is at 0.07 mb (of 32.00 mb MAX)
+0.04 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: "C:/Program Files/J.A.C.K/halflife/hlbsp.exe" C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 
+Arguments: C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       8 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 25 (0.01 seconds)
+BSP generation successful, writing portal file 'C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0.prt'
+SolidBSP [hull 1] 29 (0.00 seconds)
+SolidBSP [hull 2] 29 (0.00 seconds)
+SolidBSP [hull 3] 29 (0.00 seconds)
+Reduced 18 clipnodes to 18
+Reduced 9 texinfos to 4
+Reduced 3 texdatas to 3 (136 bytes to 136)
+Reduced 96 planes to 20
+FixBrinks:
+Increased 18 clipnodes to 18.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes             20/32768        400/655360   ( 0.1%)
+vertexes           40/65535        480/786420   ( 0.1%)
+nodes               6/32767        144/786408   ( 0.0%)
+texinfos            4/32767        160/1310680  ( 0.0%)
+faces              30/65535        600/1310700  ( 0.0%)
+* worldfaces       30/32768          0/0        ( 0.1%)
+clipnodes          18/32767        144/262136   ( 0.1%)
+leaves              2/32760         56/917280   ( 0.0%)
+* worldleaves       1/8192           0/0        ( 0.0%)
+marksurfaces       30/65535         60/131070   ( 0.0%)
+surfedges         136/512000       544/2048000  ( 0.0%)
+edges              69/256000       276/1024000  ( 0.0%)
+texdata          [variable]        136/33554432 ( 0.0%)
+lightdata        [variable]          0/50331648 ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]        511/2097152  ( 0.0%)
+* AllocBlock        1/64             0/0        ( 1.6%)
+3 textures referenced
+=== Total BSP file data space used: 3575 bytes ===
+Wad files required to run the map: "halflife.wad;"
+0.09 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: "C:/Program Files/J.A.C.K/halflife/hlvis.exe" C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 
+Arguments: C:\Phoenix\CORRIDORS\PhoenixCORRIDORS\maps\corridors0 -low 
+   1 portalleafs
+   0 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       8 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+max vis distance    [       0 ] [       0 ]
+priority            [     Low ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (0.00 seconds)
+LeafThread:
+ (0.00 seconds)
+average leafs visible: 1
+g_visdatasize:1  compressed from 1
+0.01 seconds elapsed
+
+-----   END   hlvis -----
+
+
+
